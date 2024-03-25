@@ -1,6 +1,6 @@
 package Clases;
 
-public class Piloto  extends  Persona{
+public class Piloto  extends  Persona implements  Volador{
     private  int aniosAntiguedad;
     private  int matricula;
 
@@ -24,5 +24,10 @@ public class Piloto  extends  Persona{
 
     public void setMatricula(int matricula) {
         this.matricula = matricula;
+    }
+
+    @Override
+    public void Volar() {
+        System.out.println("El piloto "+ getNombre() + " esta pilotando ");
     }
 }
